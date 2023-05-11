@@ -25,8 +25,7 @@ func isValid(s string) bool {
 
 		if prs == false {
 
-			l := len(open)
-
+			l := len(open) //if the slice is empty we have a closing parenthesis without an opening one
 			if l <= 0 {
 				return false
 				break
@@ -36,7 +35,7 @@ func isValid(s string) bool {
 
 			check, _ := par[lastElement]
 
-			if check == string(p) {
+			if check == string(p) { //we check if the closing parenthesis we found matches with an opening open in the last position of the array
 				open = open[:len(open)-1]
 			} else {
 				return false
