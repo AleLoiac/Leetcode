@@ -28,7 +28,6 @@ func isValid(s string) bool {
 			l := len(open) //if the slice is empty we have a closing parenthesis without an opening one
 			if l <= 0 {
 				return false
-				break
 			}
 
 			lastElement := open[l-1]
@@ -39,7 +38,6 @@ func isValid(s string) bool {
 				open = open[:len(open)-1]
 			} else {
 				return false
-				break
 			}
 
 		}
