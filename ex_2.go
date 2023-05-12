@@ -44,7 +44,6 @@ func isValid(s string) bool {
 
 		}
 	}
-	//fmt.Printf("%s", open)
 	if len(open) > 0 { //if the slice is not empty not all open parenthesis were closed
 		return false
 	}
