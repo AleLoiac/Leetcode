@@ -34,7 +34,7 @@ func isValid(s string) bool {
 
 			check, _ := par[lastElement]
 
-			if check == string(p) { //we check if the closing parenthesis we found matches with an opening open in the last position of the array
+			if check == string(p) { //we check if the closing parenthesis we found matches with an opening one in the last position of the array
 				open = open[:len(open)-1]
 			} else {
 				return false
