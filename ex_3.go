@@ -8,7 +8,8 @@ import (
 func main() {
 
 	//x := 123
-	x := 3205600
+	//x := 3205600
+	x := -32
 
 	fmt.Println(reverse(x))
 
@@ -18,7 +19,7 @@ func reverse(x int) int {
 
 	rev := make([]int, 0)
 
-	for x > 0 {
+	for x != 0 {
 		num := x % 10
 		rev = append(rev, num)
 		x = x / 10
