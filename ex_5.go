@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 
-	s := "XVII"
+	s := "XIV"
 
 	fmt.Println(romanToInt(s))
 
