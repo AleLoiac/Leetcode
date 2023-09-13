@@ -11,11 +11,8 @@ func main() {
 }
 
 func intToRoman(x int) string {
-
 	y := x
-
 	ints := make(map[int]string)
-
 	ints[1] = "I"
 	ints[4] = "IV"
 	ints[5] = "V"
